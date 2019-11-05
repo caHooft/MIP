@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="application_name">MIP</string>
+  <string name="timer_state_text">Time</string>
+  <string name="timer_state_value">OFF</string>
+  <string name="arduino_server_text">Arduino server</string>
+  <string name="arduino_server_connect">Not connected</string>
+  <string name="ip_address_text">IP Address</string>
+  <string name="ip_address_value">192.168.1.3</string>
+  <string name="ip_port_text">IP Port</string>
+  <string name="ip_port_value">80</string>
+  <string name="button_connect_text">Connect</string>
+  <string name="button_pin_state_text">Change State</string>
+  <string name="pin_state_text">Arduino Pin state</string>
+  <string name="change_pin_state_value">OFF</string>
+  <string name="sensor_text">Sensor value</string>
+  <string name="sensor_value">-</string>
+  <string name="mip_status_text">MIP Status : </string>
+  <string name="mip_status_value">Connected and Happy</string>
+  <string name="humidity_text">Humidity : </string>
+  <string name="humidity_value">Great weather</string>
+  <string name="ldr_data_text">LDR Data : </string>
+  <string name="ldr_data_value">Dark Bro</string>
+  <string name="temp_text">Temperature</string>
+  <string name="temp_value">Hot ASF Boi</string>
+  <string name="speed_value">MIP Speed = </string>
+  <string name="move_up">▲</string>
+  <string name="move_down">Brake</string>
+  <string name="move_left">◄</string>
+  <string name="move_right">►</string>
+  <string name="exit">Exit</string>
+  <string name="abort">Abort</string>
+</resources>

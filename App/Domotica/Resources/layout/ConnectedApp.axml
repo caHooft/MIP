@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <RelativeLayout
+        android:paddingBottom="2dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#b22c44">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dp"
+            android:background="#ff4062"
+            android:id="@+id/relativeLayout3">
+            <TextView
+                android:text="@string/mip_status_value"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:id="@+id/MIPStatusValue"
+                android:layout_alignParentRight="true"
+                android:textColor="#ffffff" />
+            <TextView
+                android:text="@string/mip_status_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/MIPStatusText"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:textColor="#ffffff" />
+            <TextView
+                android:text="@string/ldr_data_value"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:id="@+id/LDRDataValue"
+                android:layout_below="@id/MIPStatusValue"
+                android:layout_alignParentRight="true"
+                android:textColor="#ffffff" />
+            <TextView
+                android:text="@string/ldr_data_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/LDRDataText"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/MIPStatusText"
+                android:layout_alignParentLeft="true"
+                android:textColor="#ffffff" />
+            <TextView
+                android:text="@string/humidity_value"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:id="@+id/HumidityValue"
+                android:layout_below="@id/LDRDataValue"
+                android:layout_alignParentRight="true"
+                android:textColor="#ffffff" />
+            <TextView
+                android:text="@string/humidity_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/HumidityText"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/LDRDataText"
+                android:layout_alignParentLeft="true"
+                android:textColor="#ffffff" />
+            <TextView
+                android:text="@string/temp_value"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:id="@+id/TempValue"
+                android:layout_below="@id/HumidityValue"
+                android:layout_alignParentRight="true"
+                android:textColor="#ffffff" />
+            <TextView
+                android:text="@string/temp_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/TempText"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/HumidityText"
+                android:layout_alignParentLeft="true"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ff4062"
+        android:id="@+id/jemoder"
+        android:layout_marginBottom="0.0dp">
+        <ToggleButton
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_weight="0.5"
+            android:backgroundTint="#b22c44"
+            android:id="@+id/LightsToggle"
+            android:textOff="Lights are off"
+            android:textOn="Lights are on"
+            android:textColor="#ffffff" />
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_weight="0.5"
+            android:id="@+id/EyesDropdown"
+            android:layout_alignParentRight="true"
+            android:spinnerMode="dropdown" />
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_weight="0.5"
+            android:id="@+id/MusicDropdown"
+            android:layout_alignParentRight="true"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ff4062"
+        android:id="@+id/jemoder"
+        android:layout_marginBottom="0.0dp">
+        <TextView
+            android:text="@string/speed_value"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/MipSpeedValue"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff" />
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/MipSpeedSlider"
+            android:max="255"
+            android:layout_marginRight="0.0dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:paddingBottom="2dp"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#b22c44"
+        android:id="@+id/relativeLayout4">
+        <ToggleButton
+            android:layout_height="50dp"
+            android:layout_width="100dp"
+            android:id="@+id/AIToggle"
+            android:textOff="AI is off"
+            android:textOn="AI is on"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#b22c44"
+            android:textColor="#ffffff" />
+        <Button
+            android:layout_height="50dp"
+            android:layout_width="100dp"
+            android:id="@+id/UpdateButton"
+            android:text="Update Data"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="#b22c44"
+            android:textColor="#ffffff" />
+        <Button
+            android:text="@string/move_up"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/AIToggle"
+            android:id="@+id/moveUpButton"
+            android:backgroundTint="#b22c44" />
+        <Button
+            android:text="@string/move_left"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_below="@id/moveUpButton"
+            android:id="@+id/moveLeftButton"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="#b22c44" />
+        <Button
+            android:text="@string/move_right"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_below="@id/moveUpButton"
+            android:id="@+id/moveRightButton"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#b22c44" />
+        <Button
+            android:text="@string/move_down"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_below="@id/moveUpButton"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/moveDownButton"
+            android:backgroundTint="#b22c44" />
+    </RelativeLayout>
+</LinearLayout>
